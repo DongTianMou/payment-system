@@ -27,9 +27,9 @@ public class PaymentInfoController {
     @GetMapping("/addPayInfoToken")
     public ResultVO addPayInfoToken(){
         PaymentInfo paymentInfo = new PaymentInfo();
-        paymentInfo.setInfoId( 2 );
+        paymentInfo.setInfoId( 3 );
         paymentInfo.setTypeId(1);
-        paymentInfo.setOrderId( "123456" );
+        paymentInfo.setOrderId( "123456789456" );
         paymentInfo.setPrice( 200 );
         paymentInfo.setState(0);
         paymentInfo.setPlatformorderId( "1" );

@@ -44,7 +44,7 @@ public class YinLianPay implements PayAdaptService {
 
         requestData.put("riskRateInfo", "{commodityName=测试商品名称}");
 
-               //前台通知地址 （需设置为外网能访问 http https均可），支付成功后的页面 点击“返回商户”按钮的时候将异步通知报文post到该地址
+         //前台通知地址 （需设置为外网能访问 http https均可），支付成功后的页面 点击“返回商户”按钮的时候将异步通知报文post到该地址
         //如果想要实现过几秒中自动跳转回商户页面权限，需联系银联业务申请开通自动返回商户权限
         //异步通知参数详见open.unionpay.com帮助中心 下载  产品接口规范  网关支付产品接口规范 消费交易 商户通知
         requestData.put("frontUrl", paymentType.getFrontUrl());
